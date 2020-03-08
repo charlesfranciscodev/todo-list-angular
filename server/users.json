@@ -1,0 +1,76 @@
+[
+  {
+    "firstName": "Dominic",
+    "lastName": "Margaret",
+    "username": "lazybear",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-30.jpg"
+  },
+  {
+    "firstName": "Antonietta",
+    "lastName": "Sanchez",
+    "username": "orangekoala",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-69.jpg"
+  },
+  {
+    "firstName": "Tessa",
+    "lastName": "Slof",
+    "username": "redmouse",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-103.jpg"
+  },
+  {
+    "firstName": "Richard",
+    "lastName": "Burke",
+    "username": "whiteostrich",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-52.jpg"
+  },
+
+  {
+    "firstName": "Aramis",
+    "lastName": "Farias",
+    "username": "brownswan",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-21.jpg"
+  },
+  {
+    "firstName": "Karin",
+    "lastName": "Gerlach",
+    "username": "purplegorilla",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-13.jpg"
+  },
+  {
+    "firstName": "Olinto",
+    "lastName": "Viana",
+    "username": "lazyduck",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-99.jpg"
+  },
+  {
+    "firstName": "Laura",
+    "lastName": "Petersen",
+    "username": "blackelephant",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-11.jpg"
+  },
+
+  {
+    "firstName": "Alex",
+    "lastName": "Ferrer",
+    "username": "whitedog",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-11.jpg"
+  },
+  {
+    "firstName": "Johanne",
+    "lastName": "Larsen",
+    "username": "silverbutterfly",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-55.jpeg"
+  },
+  {
+    "firstName": "Claude",
+    "lastName": "Reed",
+    "username": "bluebird",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-17.jpg"
+  },
+  {
+    "firstName": "Lumi",
+    "lastName": "Koistinen",
+    "username": "greenfrog",
+    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-45.jpg"
+  }
+]
