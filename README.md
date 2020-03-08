@@ -1,7 +1,7 @@
 # TODO List
 
 Your task is to create the web frontend of a todo list app.
-Preferably, you should use a frontend framework (preferably Angular, React or Vue).
+Preferably, you should use a frontend framework (Angular, React or Vue).
 The backend is already done for you (see API documentation below).
 
 ## Features
