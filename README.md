@@ -235,6 +235,9 @@ docker-compose exec database psql -U postgres
 
 `docker-compose exec server /bin/sh`
 
+### Create a new component
+`ng generate component components/example`
+
 ## References
 * [testdriven.io](https://testdriven.io)
 * [Flask](https://palletsprojects.com/p/flask/)

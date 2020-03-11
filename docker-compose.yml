@@ -36,7 +36,5 @@ services:
       - "/usr/src/app/node_modules"
     ports:
       - 4200:4200
-    environment:
-      - ANGULAR_APP_API_URL=http://localhost:5000
     depends_on:
       - server

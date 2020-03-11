@@ -1,0 +1,7 @@
+.card-title {
+  cursor: pointer;
+}
+
+.is-complete {
+  text-decoration: line-through;
+}
