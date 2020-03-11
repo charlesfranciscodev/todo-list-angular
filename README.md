@@ -196,6 +196,12 @@ Response
 * [Docker](https://www.docker.com/)
 * [Docker Compose](https://docs.docker.com/compose/)
 
+## Frontend Setup (from scratch)
+```
+npm install -g @angular/cli
+ng new client
+```
+
 ## Development Workflow
 
 ### Build the images
