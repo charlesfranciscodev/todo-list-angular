@@ -21,176 +21,15 @@ The backend is already done for you (see API documentation below).
 
 ### Todos
 
-**GET** `/api/todos`
-
-Response
-```json
-[
-  {
-    "completed": false,
-    "content": "Pudding sweet roll bear...",
-    "dueDate": "2020-04-30",
-    "priority": 2,
-    "title": "Pudding",
-    "todoId": 1,
-    "user": {
-      "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-52.jpg",
-      "firstName": "Richard",
-      "lastName": "Burke",
-      "userId": 4,
-      "username": "whiteostrich"
-    }
-  },
-  {
-    "completed": false,
-    "content": "Sesame snaps gummi bears...",
-    "dueDate": "2020-01-02",
-    "priority": 1,
-    "title": "Sesame snaps",
-    "todoId": 2,
-    "user": {
-      "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-30.jpg",
-      "firstName": "Dominic",
-      "lastName": "Margaret",
-      "userId": 1,
-      "username": "lazybear"
-    }
-  }
-]
-```
-
----
-
-**GET** `/api/todos/{:id}`
-
-Response
-
-```json
-{
-  "completed": true,
-  "content": "Chocolate cake bear claw...",
-  "dueDate": "2020-12-29",
-  "priority": 2,
-  "title": "Muffin",
-  "todoId": 4,
-  "user": {
-    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-11.jpg",
-    "firstName": "Laura",
-    "lastName": "Petersen",
-    "userId": 8,
-    "username": "blackelephant"
-  }
-}
-```
-
----
-
-**POST** `/api/todos`
-
-Request
-```json
-{
-  "title": "My Title",
-  "content": "Ice cream apple pie...",
-  "completed": true,
-  "dueDate": "2020-05-30",
-  "priority": 3,
-  "user_id": 12
-}
-```
-
-Response
-```json
-{
-  "message": "Todo created successfully",
-  "todo_id": 17
-}
-```
-
----
-
-**PUT** `/api/todos`
-
-Request
-```json
-{
-  "todo_id": 13,
-  "title": "My Title",
-  "content": "This is the content",
-  "completed": false,
-  "dueDate": "2019-05-30",
-  "priority": 1,
-  "user_id": null
-}
-```
-
-Response
-```json
-{
-  "message": "Todo updated successfully",
-  "todo_id": 13
-}
-```
-
----
-
-**DELETE** `/api/todos/{:id}`
-
-Response
-
-204 | when the todo is successfully deleted
-
-404 | when the todo is not found
+* **GET** `/api/todos`
+* **GET** `/api/todos/{:id}`
+* **PUT** `/api/todos`
+* **DELETE** `/api/todos/{:id}`
 
 ### Users
 
-**GET** `/api/users`
-
-Response
-```json
-[
-  {
-    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-30.jpg",
-    "firstName": "Dominic",
-    "lastName": "Margaret",
-    "userId": 1,
-    "username": "lazybear"
-  },
-  {
-    "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/female-69.jpg",
-    "firstName": "Antonietta",
-    "lastName": "Sanchez",
-    "userId": 2,
-    "username": "orangekoala"
-  }
-]
-```
-
----
-
-**GET** `/api/users/{:id}`
-
-Response
-```json
-{
-  "avatarUrl": "https://charlesfranciscodev.github.io/images/diverseui/male-30.jpg",
-  "firstName": "Dominic",
-  "lastName": "Margaret",
-  "userId": 1,
-  "username": "lazybear"
-}
-```
-
-### Test
-
-**GET** `/api/test`
-
-Response
-```json
-{
-  "message": "Yo mamma so fat even penguins are jealous of the way she waddles."
-}
-```
+* **GET** `/api/users`
+* **GET** `/api/users/{:id}`
 
 ## Dependencies
 * [Docker](https://www.docker.com/)
@@ -237,6 +76,9 @@ docker-compose exec database psql -U postgres
 
 ### Create a new component
 `ng generate component components/example`
+
+### Create a new service
+`ng generate service services/example`
 
 ## References
 * [testdriven.io](https://testdriven.io)

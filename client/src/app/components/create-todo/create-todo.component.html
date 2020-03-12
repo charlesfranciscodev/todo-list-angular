@@ -1,0 +1,37 @@
+<form class="my-4 p-2 border border-secondary" (ngSubmit)="onSubmit()">
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" name="title" [(ngModel)]="title">
+    </div>
+
+    <div class="form-group col-md-3">
+      <label for="user">User</label>
+      <select id="user" name="user" class="form-control" [(ngModel)]="user">
+        <option [ngValue]="user" *ngFor="let user of users">{{ user.username }}</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-3">
+      <label for="dueDate">Due Date</label>
+      <input type="date" class="form-control" id="dueDate" name="dueDate" [(ngModel)]="dueDate">
+    </div>
+
+    <div class="form-group col-md-3">
+      <label for="priority">Priority</label>
+      <input type="number" class="form-control" id="priority" name="priority" [(ngModel)]="priority">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea class="form-control" id="content" name="content" [(ngModel)]="content"></textarea>
+  </div>
+
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="completed" name="completed" [(ngModel)]="completed">
+    <label class="form-check-label" for="completed">Completed</label>
+  </div>
+
+  <button type="submit" class="btn btn-success">Create</button>
+</form>

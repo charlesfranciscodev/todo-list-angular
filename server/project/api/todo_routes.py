@@ -42,16 +42,19 @@ def create_or_update_todo():
     response = {}
     request_json = request.get_json()
 
+    import sys
+    print("request data...", request_json, file=sys.stderr)
+
     # Validation
     keys = ["title", "content", "completed", "dueDate", "priority"]
     if request.method == "PUT":
-        keys.append("todo_id")
+        keys.append("todoId")
     for key in keys:
         if key not in request_json:
             response["message"] = "Missing {key} in request body".format(key=key)
             return jsonify(response), 400
 
-    user_id = request_json.get("user_id")
+    user_id = request_json.get("userId")
     if user_id:
         user = User.query.filter_by(user_id=user_id).first()
         if not user:
@@ -63,7 +66,7 @@ def create_or_update_todo():
     if request.method == "POST":
         todo = Todo()
     elif request.method == "PUT":
-        todo_id = int(request_json["todo_id"])
+        todo_id = int(request_json["todoId"])
         todo = Todo.query.filter_by(todo_id=todo_id).first()
         if not todo:
             response["message"] = "Todo not found"
@@ -74,7 +77,7 @@ def create_or_update_todo():
     todo.completed = request_json["completed"]
     todo.due_date = request_json["dueDate"]
     todo.priority = request_json["priority"]
-    if "user_id" in request_json:
+    if "userId" in request_json:
         todo.user_id = user_id
 
     if request.method == "POST":
@@ -83,6 +86,6 @@ def create_or_update_todo():
     elif request.method == "PUT":
         response["message"] = "Todo updated successfully"
     db.session.commit()
-    response["todo_id"] = todo.todo_id
+    response["todoId"] = todo.todo_id
     
     return jsonify(response), 201

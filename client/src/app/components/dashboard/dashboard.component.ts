@@ -16,4 +16,25 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.todoService.getTodos().subscribe(todos => this.todos = todos);
   }
+
+  deleteTodo(todoToDelete:Todo) {
+    this.todoService.deleteTodo(todoToDelete).subscribe(() => {
+      this.todos = this.todos.filter(todo => todo.todoId !== todoToDelete.todoId);
+    });
+  }
+
+  createTodo(data:Todo) {
+    let body = {
+      "title": data.title,
+      "content": data.content,
+      "completed": data.completed,
+      "dueDate": data.dueDate,
+      "priority": data.priority,
+      "userId": data.user.userId
+    };
+    this.todoService.createTodo(body).subscribe(response => {
+      data["todoId"] = response.todoId;
+      this.todos.push(data);
+    })
+  }
 }

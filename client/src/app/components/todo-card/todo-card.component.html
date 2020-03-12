@@ -1,6 +1,6 @@
 <div [ngClass]="{'card text-center mb-3': true, 'bg-primary': todo.priority === 1, 'bg-warning': todo.priority === 2, 'bg-light': todo.priority >= 3}">
   <div class="card-header">
-    <strong>{{ todo.user.username }}</strong>
+    <strong>{{ todo.user ? todo.user.username : "none" }}</strong>
   </div>
 
   <div class="card-body">
@@ -16,7 +16,7 @@
       <i class="fas fa-edit"></i>
     </a>
 
-    <button class="btn btn-danger mb-2 mx-2">
+    <button class="btn btn-danger mb-2 mx-2" (click)="onDelete(todo)">
       <i class="fas fa-trash"></i>
     </button>
   </div>

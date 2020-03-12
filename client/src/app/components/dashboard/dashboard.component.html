@@ -1,4 +1,5 @@
+<app-create-todo (createTodo)="createTodo($event)"></app-create-todo>
 <div class="row">
-  <app-todo-card class="col-sm-6 col-md-4 col-lg-3" *ngFor="let todo of todos" [todo]="todo">
+  <app-todo-card class="col-sm-6 col-md-4 col-lg-3" *ngFor="let todo of todos" [todo]="todo" (deleteTodo)="deleteTodo($event)">
   </app-todo-card>
 </div>
