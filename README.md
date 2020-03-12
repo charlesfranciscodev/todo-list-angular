@@ -7,14 +7,20 @@ The backend is already done for you (see API documentation below).
 ## Features
 
 ### Home Page
+
+#### Done
 * View a dashboard with all the todos.
-  * Filter todos by title, completion or username.
-  * Sort todos by title, due date or priority.
 * Create a new todo item.
-* Update a todo item by clicking on it and opening up a modal.
 * Delete a todo item.
 
+#### TODO
+* Update a todo item by clicking on it and opening up a modal.
+* Filter todos by title, completion or username.
+* Sort todos by title, due date or priority.
+
 ### Users Page
+
+#### TODO
 * View an image gallery of all users.
 
 ## API Routes
