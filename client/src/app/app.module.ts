@@ -9,6 +9,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { TodoCardComponent } from "./components/todo-card/todo-card.component";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CreateTodoComponent } from './components/create-todo/create-todo.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateTodoComponent } from './components/create-todo/create-todo.compon
     DashboardComponent,
     TodoCardComponent,
     NavbarComponent,
-    CreateTodoComponent
+    CreateTodoComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
